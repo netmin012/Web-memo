@@ -11,12 +11,20 @@
   "theme_color": "#ffffff",
   "categories": [],
   "screenshots": [],
+  
+  
+{
+  …
   "icons": [
+    …
     {
-      "src": "ico.svg",
-      "type": "image/svg"
-    }
-  ],
+      "src": "maskable_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+
+  
   "shortcuts": [],
   "lang": "ja",
   "display_override": [
