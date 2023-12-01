@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "webブラウザだけ動くシンプルなメモ帳",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "メモ帳web",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "メモ帳",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "ja",
+  "display_override": [
+    "window-controls-overlay"
+  ]
+}
