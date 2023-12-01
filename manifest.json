@@ -1,31 +1,33 @@
 {
-  "background_color": "#ffffff",
-  "description": "webブラウザだけ動くシンプルなメモ帳",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "メモ帳web",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "メモ帳",
-  "start_url": "/",
-  "theme_color": "#ffffff",
-  "categories": [],
-  "screenshots": [],
-  
-  
-{
-  "icons": [
+    "background_color":"#ffffff",
+    "description":"webブラウザだけ動くシンプルなメモ帳",
+    "dir":"ltr",
+    "display":"standalone",
+    "name":"メモ帳web",
+    "orientation":"any",
+    "scope":"/",
+    "short_name":"メモ帳",
+    "start_url":"/",
+    "theme_color":"#ffffff",
+    "categories":[
+    
+  ],
+    "screenshots":[
+    
+  ],
     {
-      "src": "maskable_icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-
-  
-  "shortcuts": [],
-  "lang": "ja",
-  "display_override": [
-    "window-controls-overlay"
-  ]
-}
+      "icons":[
+      {
+          "src":"maskable_icon.png",
+          "sizes":"1024x1024",
+          "type":"image/png",
+          "purpose":"maskable"
+      },
+        "shortcuts":[
+        
+      ],
+        "lang":"ja",
+        "display_override":[
+          "window-controls-overlay"
+      ]
+    }
