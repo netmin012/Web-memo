@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <!-- マニフェストファイルのリンク -->
   <link rel="manifest" href="manifest.json">
+  <!-- マニフェストファイルのリンク -->
+<link rel="manifest" href="manifest.json">
+<!-- サービスワーカーの登録 -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js').then(function(registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
+
 </head>
 <body>
   <div id="container">
