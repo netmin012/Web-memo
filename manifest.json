@@ -13,8 +13,8 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "/favicon.ico",
-      "type": "image"
+      "src": "ico.svg",
+      "type": "image/svg"
     }
   ],
   "shortcuts": [],
