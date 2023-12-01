@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>メモ帳webアプリ</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- マニフェストファイルのリンク -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="container">
+    <h1>メモ帳webアプリ</h1>
+    <div id="editor">
+      <textarea id="text" placeholder="ここにメモを入力してください"></textarea>
+      <div id="toolbar">
+        <button id="bold" onclick="toggleBold()">B</button>
+        <button id="italic" onclick="toggleItalic()">I</button>
+        <button id="underline" onclick="toggleUnderline()">U</button>
+        <select id="size" onchange="changeSize()">
+          <option value="small">小</option>
+          <option value="medium" selected>中</option>
+          <option value="large">大</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- サービスワーカーの登録 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
